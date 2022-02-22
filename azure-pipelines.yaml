@@ -136,7 +136,7 @@ jobs:
       export RESULT=$(curl -X POST ${{ variables.URL }}/api/1/rest/public/assetapi/acl/${{ variables.ORG }}/${{ variables.PROJECT_SPACE_STAGING }}/${{ variables.PROJECT_STAGING }}	 \
       -u $USER:$PASS \
       -H "Content-Type: application/json" \
-      -d '{"grant_type":"GROUP", "grantee":"admins", "granter":"mmays@snaplogic.com", "permission_list":["W","X"], "inherit":true}' \
+      -d '{"grant_type":"GROUP", "grantee":"admins", "granter":"cward@snaplogic.com", "permission_list":["W","X"], "inherit":true}' \
       --trace-ascii /dev/stdout)
       echo "##vso[task.setvariable variable=RESULT]$RESULT"
     displayName: Update Permissions on Staging Project
