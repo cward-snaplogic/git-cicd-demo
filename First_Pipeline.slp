@@ -144,7 +144,7 @@
                                     {
                                         "expression": {
                                             "expression": false,
-                                            "value": "35"
+                                            "value": "40"
                                         },
                                         "targetPath": {
                                             "value": "$result"
