@@ -10,7 +10,7 @@
         },
         "info": {
             "author": {
-                "value": "cward@snaplogic.com"
+                "value": ""
             },
             "label": {},
             "notes": {
@@ -144,7 +144,7 @@
                                     {
                                         "expression": {
                                             "expression": false,
-                                            "value": "80"
+                                            "value": "90"
                                         },
                                         "targetPath": {
                                             "value": "$result"
