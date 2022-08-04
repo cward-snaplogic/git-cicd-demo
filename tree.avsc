@@ -1,0 +1,6 @@
+{
+  "type" : "record",
+  "name" : "Tree",
+  "fields" : [
+{"name" : "children", "type" : ("type" : "array", "items": "Tree"}}
+]}
