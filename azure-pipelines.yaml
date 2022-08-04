@@ -12,6 +12,7 @@ variables:
   PROJECT_STAGING: azure_demo
 
 jobs:
+
 - job: PipelineStatusCheck
   condition: startsWith(variables['Build.SourceBranch'], 'refs/heads/feature/')
   displayName: Running best practice pipeline checks
