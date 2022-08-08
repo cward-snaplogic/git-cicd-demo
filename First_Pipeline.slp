@@ -305,7 +305,7 @@
                                     {
                                         "expression": {
                                             "expression": true,
-                                            "value": "parseInt(36)"
+                                            "value": "parseInt(50)"
                                         },
                                         "targetPath": {
                                             "value": "$age"
@@ -314,7 +314,7 @@
                                     {
                                         "expression": {
                                             "expression": false,
-                                            "value": "Chris"
+                                            "value": "Chris Ward"
                                         },
                                         "targetPath": {
                                             "value": "$firstName"
