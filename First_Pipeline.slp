@@ -305,7 +305,7 @@
                                     {
                                         "expression": {
                                             "expression": true,
-                                            "value": "parseInt(50)"
+                                            "value": "parseInt(11)"
                                         },
                                         "targetPath": {
                                             "value": "$age"
