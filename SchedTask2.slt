@@ -1,0 +1,70 @@
+{
+    "job_class": "PipelineJob",
+    "job_name": "SchedTask2",
+    "note": "",
+    "parameters": {
+        "enabled": true,
+        "job_type": "standard",
+        "llfeed_token": "iJ0ND7otbBTI5QIFXXhicWCqyZiOttxV",
+        "notification": {
+            "slack_recipients": [
+                {
+                    "channel": [],
+                    "user": []
+                }
+            ]
+        },
+        "pipeline_parameters": {},
+        "pipeline_path": "Second_Pipeline",
+        "snaplex_path": "Ultra-Cloud"
+    },
+    "schedule": {
+        "repeat": {
+            "blackout_dates": [],
+            "by": "days",
+            "cron": {
+                "day": "*",
+                "day_of_week": "*",
+                "hour": "*",
+                "minute": "0",
+                "month": "*"
+            },
+            "ends": {
+                "occurrences": null,
+                "when": "never"
+            },
+            "every": 1,
+            "on": {
+                "day": []
+            }
+        },
+        "start_date": "2022-10-04",
+        "start_time": "14:08:23",
+        "time_zone": "Europe/London"
+    },
+    "trigger": {
+        "repeat": {
+            "blackout_dates": [],
+            "by": "days",
+            "cron": {
+                "day": "*",
+                "day_of_week": "*",
+                "hour": "*",
+                "minute": "0",
+                "month": "*"
+            },
+            "ends": {
+                "occurrences": null,
+                "when": "never"
+            },
+            "every": 1,
+            "on": {
+                "day": []
+            }
+        },
+        "start_date": "2022-10-04",
+        "start_time": "14:08:23",
+        "time_zone": "Europe/London"
+    },
+    "trigger_type": "ScheduleTrigger"
+}
