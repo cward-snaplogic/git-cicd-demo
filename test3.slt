@@ -16,7 +16,7 @@
             ]
         },
         "pipeline_parameters": {},
-        "pipeline_path": "test",
+        "pipeline_path": null,
         "snaplex_path": "PS-Team-Cloud"
     },
     "schedule": {},
