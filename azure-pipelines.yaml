@@ -8,8 +8,8 @@ variables:
   URL: https://elastic.snaplogic.com
   ORG: SnapLogic-PS-Team
   PROJECT_SPACE_TEST: CICD_02_Test
-  PROJECT_SPACE_STAGING: CICD_03_Staging
-  PROJECT_STAGING: azure_demo
+  PROJECT_SPACE_PROD: CICD_03_Prod
+  PROJECT_PROD: azure_demo
 
 jobs:
 
@@ -97,7 +97,7 @@ jobs:
     vmImage: ubuntu-latest
   steps:
   - script: |
-      export RESULT=$(curl -X POST ${{ variables.URL }}/api/1/rest/public/assetapi/project/${{ variables.ORG }}/${{ variables.PROJECT_SPACE_STAGING }} \
+      export RESULT=$(curl -X POST ${{ variables.URL }}/api/1/rest/public/assetapi/project/${{ variables.ORG }}/${{ variables.PROJECT_SPACE_PROD }} \
       -u $USER:$PASS -H \
       "Content-Type: application/json" \
       -d '{"permissions":[{"perms": ["R","W","X"],"subject_type": "USER","inherit": true,"subject": "'$USER'"}]}' \
@@ -108,7 +108,7 @@ jobs:
       USER: $(user)
       PASS: $(pass)
   - script: |
-      export RESULT=$(curl -X POST ${{ variables.URL }}/api/1/rest/public/assetapi/project/${{ variables.ORG }}/${{ variables.PROJECT_SPACE_STAGING }}/${{ variables.PROJECT_STAGING }}	 \
+      export RESULT=$(curl -X POST ${{ variables.URL }}/api/1/rest/public/assetapi/project/${{ variables.ORG }}/${{ variables.PROJECT_SPACE_PROD }}/${{ variables.PROJECT_PROD }}	 \
       -u $USER:$PASS \
       -H "Content-Type: application/json" \
       -d '{"permissions":[{"perms": ["R","W","X"],"subject_type": "USER","inherit": true,"subject": "'$USER'"}]}' \
@@ -119,8 +119,8 @@ jobs:
       USER: $(user)
       PASS: $(pass)
   - script: |
-      # curl -X POST ${{ variables.URL }}/api/1/rest/project/checkout/${{ variables.ORG }}/${{ variables.PROJECT_SPACE_STAGING }}/${{ variables.PROJECT_STAGING }} \
-      export RESULT=$(curl -X POST ${{ variables.URL }}/api/2/5b92a17b2cf68b1b9651a357/rest/project/checkout/${{ variables.ORG }}/${{ variables.PROJECT_SPACE_STAGING }}/${{ variables.PROJECT_STAGING }} \
+      # curl -X POST ${{ variables.URL }}/api/1/rest/project/checkout/${{ variables.ORG }}/${{ variables.PROJECT_SPACE_PROD }}/${{ variables.PROJECT_PROD }} \
+      export RESULT=$(curl -X POST ${{ variables.URL }}/api/2/5b92a17b2cf68b1b9651a357/rest/project/checkout/${{ variables.ORG }}/${{ variables.PROJECT_SPACE_PROD }}/${{ variables.PROJECT_PROD }} \
       -u $USER:$PASS \
       -H "Content-Type: application/json" \
       -d '{"repo":"'$REPO'","ref":"'$BRANCH'"}' \
@@ -135,7 +135,7 @@ jobs:
   - script: sleep 3s
     displayName: Sleep for 3 seconds
   - script: |
-      export RESULT=$(curl -X POST ${{ variables.URL }}/api/1/rest/public/assetapi/acl/${{ variables.ORG }}/${{ variables.PROJECT_SPACE_STAGING }}/${{ variables.PROJECT_STAGING }}	 \
+      export RESULT=$(curl -X POST ${{ variables.URL }}/api/1/rest/public/assetapi/acl/${{ variables.ORG }}/${{ variables.PROJECT_SPACE_PROD }}/${{ variables.PROJECT_PROD }}	 \
       -u $USER:$PASS \
       -H "Content-Type: application/json" \
       -d '{"grant_type":"GROUP", "grantee":"admins", "granter":"cward@snaplogic.com", "permission_list":["W","X"], "inherit":true}' \
