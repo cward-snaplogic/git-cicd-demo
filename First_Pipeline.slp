@@ -370,7 +370,7 @@
                                     {
                                         "expression": {
                                             "expression": true,
-                                            "value": "parseInt(10)"
+                                            "value": "parseInt(36)"
                                         },
                                         "targetPath": {
                                             "value": "$age"
