@@ -397,7 +397,7 @@
                                     {
                                         "expression": {
                                             "expression": false,
-                                            "value": "Christopher"
+                                            "value": "Chris"
                                         },
                                         "targetPath": {
                                             "value": "$firstName"
