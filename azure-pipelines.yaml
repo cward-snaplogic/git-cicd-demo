@@ -1,5 +1,5 @@
 trigger:
-- feature/*
+- bugs/*
 - main
 
 name: CICD_$(Date:yyyyMMdd)_$(Rev:r)
@@ -14,7 +14,7 @@ variables:
 jobs:
 
 - job: Test
-  condition: startsWith(variables['Build.SourceBranch'], 'refs/heads/feature/')
+  condition: startsWith(variables['Build.SourceBranch'], 'refs/heads/bugs/')
   displayName: Build Test Project and Run Tests
   pool:
     vmImage: ubuntu-latest  
@@ -55,7 +55,7 @@ jobs:
       USER: $(user)
       PASS: $(pass)
       REPO: $(Build.Repository.Name)
-      BRANCH: feature/$(Build.SourceBranchName)    
+      BRANCH: bugs/$(Build.SourceBranchName)    
   - script: |
       export RESULT=$(curl -X GET ${{ variables.URL }}/api/1/rest/slsched/feed/${{ variables.ORG }}/${{ variables.PROJECT_SPACE_TEST }}/$(Build.BuildNumber)/test1	 \
       -u $USER:$PASS \
