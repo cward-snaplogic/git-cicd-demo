@@ -98,7 +98,7 @@
         "detail_map": {
             "11111111-1111-1111-1111-000000000000": {
                 "error": {},
-                "grid_x_int": 2,
+                "grid_x_int": 1,
                 "grid_y_int": 2,
                 "index": null,
                 "input": {},
@@ -110,7 +110,7 @@
             },
             "11111111-1111-1111-1111-000000000001": {
                 "error": {},
-                "grid_x_int": 3,
+                "grid_x_int": 2,
                 "grid_y_int": 2,
                 "index": null,
                 "input": {},
@@ -128,7 +128,7 @@
                         "rot_int": 0
                     }
                 },
-                "grid_x_int": 4,
+                "grid_x_int": 3,
                 "grid_y_int": 2,
                 "index": null,
                 "input": {},
@@ -140,7 +140,7 @@
             },
             "11111111-1111-1111-1111-000000000003": {
                 "error": {},
-                "grid_x_int": 5,
+                "grid_x_int": 4,
                 "grid_y_int": 1,
                 "index": null,
                 "input": {},
@@ -152,7 +152,7 @@
             },
             "11111111-1111-1111-1111-000000000004": {
                 "error": {},
-                "grid_x_int": 5,
+                "grid_x_int": 4,
                 "grid_y_int": 2,
                 "index": null,
                 "input": {},
@@ -164,7 +164,7 @@
             },
             "11111111-1111-1111-1111-000000000005": {
                 "error": {},
-                "grid_x_int": 6,
+                "grid_x_int": 5,
                 "grid_y_int": 1,
                 "index": null,
                 "input": {},
@@ -176,7 +176,7 @@
             },
             "11111111-1111-1111-1111-000000000006": {
                 "error": {},
-                "grid_x_int": 6,
+                "grid_x_int": 5,
                 "grid_y_int": 2,
                 "index": null,
                 "input": {},
@@ -188,7 +188,7 @@
             },
             "11111111-1111-1111-1111-000000000007": {
                 "error": {},
-                "grid_x_int": 7,
+                "grid_x_int": 6,
                 "grid_y_int": 2,
                 "index": null,
                 "input": {},
@@ -397,7 +397,7 @@
                                     {
                                         "expression": {
                                             "expression": false,
-                                            "value": "Chris"
+                                            "value": "Christopher"
                                         },
                                         "targetPath": {
                                             "value": "$firstName"
