@@ -1,0 +1,32 @@
+{
+    "class_id": "com-snaplogic-snaps-apisuite-accounts-basicauthaccount",
+    "class_version": 1,
+    "migration_metadata": {
+        "source_org": "SnapLogic-PS-Team"
+    },
+    "property_map": {
+        "info": {
+            "label": {
+                "value": "CW - SL Public API"
+            },
+            "notes": {
+                "value": null
+            }
+        },
+        "settings": {
+            "password": {
+                "expression": false,
+                "fp": "9207eb494545fc4f2dc7c4c82154a174471ac326432005090fb071e53e4bdba6",
+                "key": "account-cloud-managed-5a7406fabc9ffa1d0bfa7781-2018-02-02T06:36:54-365964+00:00",
+                "sym_iv": "xLdh0rs9S541DbNafnCrpg==",
+                "sym_key": "hrc+5FxutcITzeNgAxAyk3Sw7ltXS1QC3lTAuI8EDrNQPtH71EH810/bU++qcy3bClSK5Xhhp7EAwonSZQrEdlY3EqSz24BFgAie3PW5t1o6IOxGq1xf+xwoeJv3L6uNQURWyOfaZNzc4f2Uz9t+a4yVd0hWucmJ64AjrbgmSnDHe8cv+ORsP93UxjkH2AeZsBvEMjUN36h8qsNYWYBPobjLsVYQYsluwQOk+o0koY6KjnSXIT9t9iQ4DSuvbYR9dS64gyPNlkBD7UFmwC2HtgN1ZylVqm0JXBUSJzMpDo9UgTKS0BKMvi/zFTv+TNPMpsxvGK6L/U3xNqTLCaBDQg==",
+                "value": "0RntslLRAZ9o93RXUVWr7Q=="
+            },
+            "username": {
+                "expression": false,
+                "value": "cward@snaplogic.com"
+            }
+        },
+        "view_serial": 100
+    }
+}
