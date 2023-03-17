@@ -1,0 +1,25 @@
+{
+    "job_class": "PipelineJob",
+    "job_name": "Create_Contact_In_Salesforce_Task",
+    "note": "",
+    "parameters": {
+        "enabled": true,
+        "include_external_urls": true,
+        "job_type": "standard",
+        "llfeed_token": "d3BmYnycMe9VBKIpJfxvCFYsa4nJGtrG",
+        "notification": {
+            "slack_recipients": [
+                {
+                    "channel": [],
+                    "user": []
+                }
+            ]
+        },
+        "pipeline_parameters": {},
+        "pipeline_path": "Create_Contact_In_Salesforce",
+        "snaplex_path": "Ultra-Cloud"
+    },
+    "schedule": {},
+    "trigger": {},
+    "trigger_type": "ScheduleTrigger"
+}
